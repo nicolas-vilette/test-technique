@@ -1,0 +1,19 @@
+<section class="banner">
+  <div class="container">
+    <div class="row content-center">
+      <h1>Liste des commerçants</h1>
+    </div>
+  </div>
+</section>
+
+
+<div class="container">
+  <div class="row">
+    <h2>Page Content</h2>
+    <p>
+      <% @shops.each do |shop| %>
+        <%= shop.name %>
+      <% end %>
+    </p>
+  </div>
+</div>

@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>TestTechnique</title>
+    <title>Test Technique</title>
+
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
 
@@ -10,6 +11,11 @@
   </head>
 
   <body>
-    <%= yield %>
+    <div class="content">
+      <%= render partial: 'layouts/partials/navbar' %>
+      
+      <%= yield %>
+    </div>
+
   </body>
 </html>

@@ -7,4 +7,10 @@ Rails.application.routes.draw do
 
     root to: redirect('/admin/shops')
   end
+
+  resources :homes
+  root to: 'homes#index'
+
+
+
 end
