@@ -10,6 +10,7 @@ Rails.application.routes.draw do
 
   resources :homes
   root to: 'homes#index'
+  resources :shops, param: :slug
 
 
 

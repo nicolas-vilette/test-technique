@@ -11,11 +11,21 @@
   </head>
 
   <body>
-    <div class="content">
       <%= render partial: 'layouts/partials/navbar' %>
-      
-      <%= yield %>
-    </div>
+
+      <section class="site">
+
+        <%= render partial: 'layouts/partials/header' %>
+
+        <article class="body">
+          <%= yield %>
+        </article>
+
+        <%= render partial: 'layouts/partials/sidebar' %>
+
+        <%= render partial: 'layouts/partials/footer' %>
+
+      </section>
 
   </body>
 </html>
