@@ -1,0 +1,89 @@
+.image{
+  margin: 0;
+  max-width: 450px;
+  max-height: 300px;
+  overflow: hidden;
+}
+
+.image-item{
+  border-radius: 20px 20px 0 0;
+  width: 100%;
+}
+
+.shops-container{
+  margin-left: 20px;
+}
+
+.card {
+  margin-bottom: 30px;
+  margin-left: 25px;
+}
+
+.content {
+  border-radius: 0 0 20px 20px;
+  padding: 20px;
+}
+
+.carousel{
+  display:block;
+  width: 100%;
+  overflow-x: scroll;
+  padding: 10px;
+  margin: 0;
+  white-space: nowrap;
+}
+
+.item {
+  background-color: #ffffff;
+  display: inline-block;
+  width: 450px;
+  margin: 0 30px;
+  background-size: cover;
+  position:relative;
+  border-radius: 20px;
+  box-shadow: 0 0 10px #dfdfdf;
+}
+
+.item-product {
+  background-color: #ffffff;
+  display: inline-block;
+  width: 300px;
+  margin: 0 30px;
+  background-size: cover;
+  position:relative;
+  border-radius: 20px;
+  box-shadow: 0 0 10px #dfdfdf;
+}
+
+.item .content{
+  width: 100%;
+  padding-top: 10px;
+  padding-bottom: 60px;
+  bottom: 0;
+  background-color: #ffffff;
+}
+
+.item h1{
+  position: absolute;
+  bottom: 0;
+  color: white;
+  text-align: center;
+  width: 100%;
+  font-size: 4em;
+  background-color: #ffffff;
+}
+
+.item div p {
+  padding-left: 20px;
+  white-space: normal;
+}
+
+.taxon {
+  font-size: 1em;
+  color: #10b981;
+}
+
+.shop-name {
+  font-size: 1.3em;
+  color: #000000;
+}

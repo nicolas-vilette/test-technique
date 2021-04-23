@@ -1,0 +1,31 @@
+<% if present?(@products) %>
+
+  <% @taxons.each do |taxon| %>
+    <div class="shop-container" id="<%=taxon.id%>">
+
+      <% if present?(taxon.products.find_products(@shop.id)) %>
+        <p><%= taxon.name.upcase %></p>
+      <% end %>
+
+      <% taxon.products.find_products(@shop.id).each do |product| %>
+        <div class="carousel">
+          <div id="shop" class="item-product">
+            <div class="image">
+              <img src="https://images.unsplash.com/photo-1615478439492-434f70dfe613?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=2700&q=80" class="image-item">
+            </div>
+            <div class="content">
+              <p class="taxon"><%= to_sentence(product) %></p>
+              <p class="shop-name"><%= product.name %></p>
+              <p class="shop-name"><%= number_to_currency(product.price) %></p>
+            </div>
+          </div>
+        </div>
+      <% end %>
+    </div>
+  <% end %>
+
+
+
+<% else %>
+  <p>Aucun article n'est en vente dans cette boutique</p>
+<% end %>

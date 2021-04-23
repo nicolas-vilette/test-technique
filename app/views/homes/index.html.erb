@@ -1,0 +1,30 @@
+<% @taxons.each do |taxon| %>
+
+  <% if present?(taxon.shops) %>
+
+      <div class="shops-container" id="<%=taxon.id%>">
+          <p><%= taxon.name.upcase %></p>
+
+      <div class="carousel">
+        <% taxon.shops.each do |shop| %>
+          <% if available(shop.available_on) %>
+            <%= link_to shop_path(shop.slug) do %>
+              <div id="shop" class="item">
+                <div class="image">
+                  <img src=<%=@random_image.sample%> class="image-item">
+                </div>
+                <div class="content">
+                  <p class="taxon"><%= to_sentence(shop) %></p>
+                  <p class="shop-name"><%= shop.name %></p>
+                </div>
+              </div>
+            <% end %>
+          <% end %>
+        <% end %>
+      </div>
+    </div>
+
+
+
+  <% end %>
+<% end %>

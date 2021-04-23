@@ -1,0 +1,7 @@
+<aside class="sidebar">
+  <ul class="nav-sidebar">
+    <% @side_content.each do |content| %>
+        <li><a href="#<%=content.id%>" class="effect"><%= content.name %></a></li>
+    <% end %>
+  </ul>
+</aside>
